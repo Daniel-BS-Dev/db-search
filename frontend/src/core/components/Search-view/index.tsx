@@ -30,7 +30,7 @@ type Props = {
             
             <div className="view-details">
               <ul className="view-details-list">
-                 <li><h5>Repositorios Publicados:{public_repos}</h5></li>  
+                 <li><h5>Repositorios:{public_repos}</h5></li>  
                  <li><h5>Seguidores:{followers}</h5></li>
                  <li><h5>Seguindo:{following}</h5></li>
               </ul>

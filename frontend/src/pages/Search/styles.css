@@ -3,6 +3,7 @@
   min-height: calc(100vh - 90px);
   background: #fff;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   padding: 20px 10px 30px 10px;
 }
@@ -35,8 +36,8 @@
   
 }
 
-.form-control{
-  height: 40px;
+input.form-control{
+  background-color: #fff;
 }
 
 .search-button button{
