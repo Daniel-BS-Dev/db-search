@@ -5,6 +5,7 @@ import { BASE_URL} from '../../utils/request';
 import './styles.css';
 import SearchView from '../../core/components/Search-view';
 import Button from '../../core/components/Button-home';
+import { toast } from 'react-toastify';
 
 
 const Search = () => {
@@ -17,7 +18,11 @@ const Search = () => {
     event.preventDefault();
     setIsLoading(true);
     axios(`${BASE_URL}${name}`)
-      .then(response => setUserData(response.data))
+      .then(response => {
+        setUserData(response.data)
+        toast.success('Usuario encontrado com sucesso')
+      })
+      .catch(() => toast.error('Usuario não encontrado'))
       .finally(()=> {
         setIsLoading(false);
       });
