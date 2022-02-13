@@ -1,3 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
+
+:root {
+  --color-success: #2ccb69f2;
+  --color-danger: #df5753;
+  --color-primary: #407bff;
+}
+
 body{
   background-color: #e5e5e5;
   padding: 5px;
