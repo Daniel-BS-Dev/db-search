@@ -1,0 +1,17 @@
+.button-home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  background-color: #1890ff;
+  height: 40px;
+  width: 100px;
+}
+
+.button-home a {
+  cursor: pointer;
+}
+
+.button-title {
+  color: #ffffff;
+}

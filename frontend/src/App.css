@@ -1,0 +1,36 @@
+body{
+  background-color: #e5e5e5;
+  padding: 5px;
+  margin: 5px;
+  box-sizing: border-box;
+}
+
+*{
+  font-family: sans-serif;
+
+}
+h1, h2,h3,h4,li,ul{
+  font-style: normal;
+  font-weight:bold;
+  color: #fff;
+  
+}
+a{
+  text-decoration: none;
+  color: #1890FF;
+  
+}
+button{
+  border:none;
+  cursor: pointer;
+  
+}
+ul, li{
+list-style: none;
+display: flex;
+padding: 0px;
+margin: 0px;
+}
+input{
+  background-color: #fff;
+}
