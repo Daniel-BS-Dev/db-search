@@ -14,19 +14,25 @@
     font-size: 20px;
     line-height: 32px;
     color: #FFFFFF;
+    
+}
+
+.nav-title:hover{
+    color: #000;
+    
 }
 
 .git {
     min-height: 100%;
-    width: 30%;
+    width: 75px;
     display: flex;
     align-items: center;
     justify-content: end;
-    color: #fff;
-    
+    color: #FFFFFF;
 }
 
 .git .name{
+    margin-top: 15px;
     padding-left: 2px;
     font-size: 14px;
 }

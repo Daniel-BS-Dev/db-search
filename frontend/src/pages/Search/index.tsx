@@ -4,6 +4,7 @@ import axios from "axios";
 import { BASE_URL} from '../../utils/request';
 import './styles.css';
 import SearchView from '../../core/components/Search-view';
+import Button from '../../core/components/Button-home';
 
 
 const Search = () => {
@@ -27,25 +28,22 @@ const Search = () => {
   }
   return (
     
-       <div className="search-container">
-       <form onSubmit={handleSubmit}>
-           <div className="search-content">
+       <section className="search-container">
+       <form onSubmit={handleSubmit} className="search-content">
              <h2 className="search-title">Encontre um perfil Github</h2>
              <div className="div-input">
              <input 
                   type="text" 
                   name="name" 
-                  placeholder="Usuario github"
-                  className="search-input"
+                  placeholder="Digite o nome aqui"
+                  className="form-control"
                   required
                   value={name}
                   onChange={handleChange} />
               </div>
-              <button type = "submit" value="submit" className="search-button">
-                  <h3>Encontrar</h3> 
-              </button>
-          
-          </div>
+              <div className='search-button'>
+                  <Button text={'ENCONTRAR'}/>
+              </div>
        </form>
        
        {isLoading ? <div className="search-laoder">
@@ -64,7 +62,7 @@ const Search = () => {
        )}
            
            
-      </div>
+      </section>
   ); 
 }
 export default Search;

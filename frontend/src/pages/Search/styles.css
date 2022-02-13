@@ -1,57 +1,98 @@
 .search-container {
-  background-color: #fff;
+  min-width: 100%;
+  min-height: calc(100vh - 90px);
+  background: #fff;
   display: flex;
-  display: block;
   justify-content: center;
-  padding: 60px 100px 200px 90px;
+  padding: 20px 10px 30px 10px;
 }
+
 .search-content {
-  height: 270px;
+  width:100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
   background: #e6f7ff;
-  border-radius: 16px;
-  padding: 65px 100px 45px 95px;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 40px 10px;
+  
 }
+
 .search-title {
   font-weight: 500;
-  font-size: 38px;
-  line-height: 46px;
+  font-size: 25px;
+  line-height: 36px;
+  margin-bottom: 20px;
   color: #262626;
 }
-.search-laoder {
-  display: flex;
-  margin-top: 25px;
-  background: #f5f5f5;
-  border-radius: 8px;
-}
-.search-input {
-  width: 675px;
-  height: 40px;
-  background: #fff;
-  border: 1px solid #d9d9d9;
-  box-sizing: border-box;
-  border-radius: 4px;
-  display: flex;
-  align-items: center;
-  background-color: #fff;
-}
 
-.div-input input {
-  padding: 10px 30px 10px 20px;
-  font-size: 16px;
-  line-height: 24px;
+.search-button{
+  width: 100%;
   display: flex;
-  align-items: center;
-  color: #000;
-  background-color: #fff;
-}
-
-.search-button {
-  display: flex;
-  align-items: center;
   justify-content: center;
-  border-radius: 4px;
-  background-color: #1890ff;
+  margin-top: 15px;
+  
+}
+
+.form-control{
   height: 40px;
-  width: 100px;
-  margin-top: 50px;
+}
+
+.search-button button{
+  width: 95%;
+  height: 45px;
+  font-size: 15px;
+}
+
+@media screen and (min-width:586px){
+  .search-container {
+    padding: 50px 30px;
+  }
+  
+  .search-content {
+    padding: 40px;
+    
+  }
+  
+  .search-title {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .search-button{
+    justify-content: flex-start;
+
+    
+  }
+
+  .search-button button h3{
+    font-size: 25px;
+  }
+  
+  .form-control{
+    height: 50px;
+  }
+  
+  .search-button button{
+    width: 250px;
+  }
+}
+
+@media screen and (min-width:992px){
+  .search-title {
+    font-size: 40px;
+    margin-bottom: 50px;
+  }
+
+  .form-control{
+     width: 800px;
+  }
+
+  .search-button button{
+    width: 300px;
+    height: 50px;
+  }
+
+ 
 }

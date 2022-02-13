@@ -9,7 +9,7 @@ const MyRoutes = () => (
      <NavBar />
     <Routes>
       <Route path='/' element={<Home />} />
-      <Route path='/record' element={<Search />} />
+      <Route path='/search' element={<Search />} />
     </Routes>
   </Router>
 
